@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Mission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #121212; 
+        }
+
+        .core-mission-section {
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            color: #fef3d7;
+            padding: 60px 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+            border-radius: 10px;
+        }
+
+        .core-mission-content {
+            flex: 2;
+            padding-right: 30px; /* Padding added to the right to separate content from image */
+        }
+
+        .core-mission-content h2 {
+            font-size: 36px;
+            color: #fef3d7;
+            margin-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .core-mission-content p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #fef3d7;
+            text-align: justify;
+        }
+
+        .core-mission-content p strong {
+            color: #FFB400;
+        }
+
+        .core-mission-content .mission-points {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .core-mission-content .mission-points li {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #fef3d7;
+            margin-bottom: 10px;
+        }
+
+        .core-mission-content .mission-points li::before {
+            content: '✓ ';
+            color: #FFB400;
+            font-weight: bold;
+        }
+
+        .core-mission-content hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 2px solid #FFB400;
+        }
+
+        .core-mission-section .image-container {
+            flex: 1;
+            max-width: 45%;
+        }
+
+        .core-mission-section .image-container img {
+            margin: auto;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .back-button {
+            display: block; 
+            width: 150px; 
+            margin: 20px auto; 
+            padding: 10px; 
+            background-color: #FFB400; 
+            color: black; 
+            text-align: center;
+            text-decoration: none; 
+            border-radius: 5px; 
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #E76B00; 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <section class="core-mission-section">
+        <div class="core-mission-content">
+            <h2>Our Core Mission</h2>
+            <p>At CereBro, our mission is to empower individuals by enhancing their <strong>critical thinking</strong>, <strong>effective communication</strong>, and <strong>intellectual curiosity</strong>. We believe that these skills are essential for personal growth and success in a fast-changing world.</p>
+            <p>We aim to:</p>
+            <ul class="mission-points">
+                <li>Foster critical thinking through structured debates and discussions.</li>
+                <li>Enhance communication skills by encouraging articulation of ideas.</li>
+                <li>Promote intellectual exploration and lifelong learning.</li>
+                <li>Prepare individuals for leadership roles by building confidence and public speaking abilities.</li>
+            </ul>
+            <hr>
+            <p>Our platform provides a space where these essential skills are honed, preparing individuals for success in an ever-evolving world.</p>
+        </div>
+        <div class="image-container">
+            <img src="./images/CR.png" alt="Core Mission Image">
+        </div>
+    </section>
+    <a href="index.html" class="back-button">Back to Home</a>
+
+</body>
+</html>

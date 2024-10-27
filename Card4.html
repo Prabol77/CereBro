@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Corner - Critical Thinking</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-text h1 {
+            font-size: 2.5em;
+            color: #FFB400;
+            margin-bottom: 5px;
+        }
+
+        .title-text p {
+            font-size: 1.2em;
+            color: #BDBDBD;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .prompt-card {
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .prompt-card h2 {
+            color: #FFB400;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FFB400;
+            padding-bottom: 10px;
+        }
+
+        .prompt {
+            font-size: 1.2em;
+            color: #E0E0E0;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #FFB400;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            background-color: #121212;
+            color: #E0E0E0;
+            border: 1px solid #FFB400;
+            border-radius: 5px;
+            resize: vertical;
+            font-size: 1em;
+        }
+
+        .submit-button {
+            background-color: #FFB400;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #FFC640;
+            transform: scale(1.05);
+        }
+
+        .responses {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #FFB400;
+        }
+
+        .responses h3 {
+            font-size: 1.5em;
+            color: #FFB400;
+            margin-bottom: 10px;
+        }
+
+        .user-response {
+            background-color: #2A2A2A;
+            color: #E0E0E0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <div class="title-text">
+                <h1>Critical Thinking</h1>
+                <p>Delve into questions that challenge your perspective and spark insightful discussions.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="prompt-card">
+            <h2>Today's Thought-Provoking Question</h2>
+            <p class="prompt">"If we could erase one memory, should we? How might this change who we are today?"</p>
+            <form id="responseForm">
+                <label for="response">Share Your Insight:</label>
+                <textarea id="response" name="response" rows="6" placeholder="Type your thoughts here..." required></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <div class="responses">
+                <h3>Community Responses:</h3>
+                <p>No responses yet. Be the first to share your thoughts!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("responseForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const responseText = document.getElementById("response").value;
+            const responsesDiv = document.querySelector(".responses");
+
+            const newResponse = document.createElement("p");
+            newResponse.classList.add("user-response");
+            newResponse.innerHTML = `<strong>User:</strong> ${responseText}`;
+            responsesDiv.appendChild(newResponse);
+
+            this.reset();
+        });
+    </script>
+</body>
+</html>

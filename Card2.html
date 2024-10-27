@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Discussion Section</title>
+    <style>
+        body {
+            background-color: #121212; 
+            color: #fef3d7; 
+            font-family: 'Arial', sans-serif; 
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .discussion-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .discussion-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFB400; 
+        }
+        
+        .discussion-list {
+            margin-bottom: 20px;
+        }
+        
+        .discussion-topic {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #2a2a2a; 
+            border: 1px solid #FFB400; 
+        }
+        
+        .topic-title {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        
+        .topic-description {
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+        
+        .comments {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #FFB400; 
+        }
+        
+        .comment {
+            margin-bottom: 10px;
+        }
+        
+        .add-comment-title {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+        }
+        
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .input-name, .input-comment {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            background-color: #2a2a2a; 
+            color: #fef3d7; 
+        }
+        
+        .input-comment {
+            resize: vertical;
+        }
+        
+        .submit-button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF7F00; 
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+        
+        .submit-button:hover {
+            background-color: #E76B00; 
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="discussion-container">
+        <h1 class="discussion-title">Cerebro Group Discussion</h1>
+        <div class="discussion-list">
+            <div class="discussion-topic">
+                <h2 class="topic-title">Group Discussion 1: The Impact of Technology on Society</h2>
+                <p class="topic-description">How has technology changed the way we communicate and interact?</p>
+                <div class="comments">
+                    <div class="comment">
+                        <p><strong>User A:</strong> Technology has made communication instant but has reduced face-to-face interactions.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User B:</strong> I think it's a double-edged sword; while we connect globally, we lose local community ties.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discussion-topic">
+                <h2 class="topic-title">Group Discussion 2: Sustainability Practices in Daily Life</h2>
+                <p class="topic-description">What are some effective ways to incorporate sustainability into our everyday routines?</p>
+                <div class="comments">
+                    <div class="comment">
+                        <p><strong>User C:</strong> Small changes like using reusable bags can make a big difference!</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User D:</strong> Composting at home has been a great way to reduce waste.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discussion-topic">
+                <h2 class="topic-title">Group Discussion 3: The Future of Remote Work</h2>
+                <p class="topic-description">Will remote work become the new norm, and how should companies adapt?</p>
+                <div class="comments">
+                    <div class="comment">
+                        <p><strong>User E:</strong> I believe companies need to invest in better tools for remote collaboration.</p>
+                    </div>
+                    <div class="comment">
+                        <p><strong>User F:</strong> Flexibility is key; we need to balance work and personal life better.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
